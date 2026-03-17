@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.8/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-name">
+                <span>Converter</span>
+            </div>
+            <div class="header-info">
+
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section>
+            <!--NNumber input-->
+                <div class="number">
+                    <span>Number: </span>
+                    <input type="text" id="number" placeholder="Enter a number">
+                </div>
+                <!--Conversion From-->
+                <div class="from">
+                    <span>From: </span>
+                    <select name="" id="fromBase">
+                        <option value="2">binary(2)</option>
+                        <option value="8">octal(8)</option>
+                        <option value="10">decimal(10)</option>
+                        <option value="16">hexa-decimal(16)</option>
+                    </select>
+                </div>
+                <!--Conversion To-->
+                <div class="to">
+                    <span>To: </span>
+                    <select name="" id="toBase">
+                        <option value="2">binary(2)</option>
+                        <option value="8">octal(8)</option>
+                        <option value="10">decimal(10)</option>
+                        <option value="16">hexa-decimal(16)</option>
+                    </select>
+                </div>
+                <!--Button-->
+                <button class="btn btn-primary" onclick="convert()">Convert</button>
+                <!--Output-->
+                <div class="output">
+                    <span class="result-label">Result:  </span>
+                    <span id="result"> </span>
+                </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
